@@ -7,7 +7,7 @@ import Input from "@/components/Input";
 import useFetchStockSymbolMutation from "@/apiConfigs/useFetchStockSymbolMutation";
 import useDebounce from "@/hooks/useDebounce";
 
-const Home: FC<{}> = (): JSX.Element => {
+const Home: FC<object> = (): JSX.Element => {
   const [value, setValue] = useState("");
   const inputDebouncedValue = useDebounce(value);
 
